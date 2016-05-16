@@ -1,7 +1,13 @@
 ## Greetings Warrior! 
 
 
-## 1. Here we create the goodies
+## 1. # makeCacheMatrix is a function that returns a list of functions
+# matrix. Contains the following functions:
+# * setMatrix      set the value of a matrix
+# * getMatrix      get the value of a matrix
+# * cacheInverse   get the cahced value (inverse of the matrix)
+# * getInverse     get the cahced value (inverse of the matrix)
+
 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
@@ -18,6 +24,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## 2. Let's compute the inverse and cache it 
 
+# The following function calculates the inverse of a "special" matrix created with 
+# makeCacheMatrix
+
 
 cacheSolve <- function(x, ...) {
   inv <- x$getinverse()
@@ -32,7 +41,7 @@ cacheSolve <- function(x, ...) {
 }
 
 
-## 3. Test
+## 3. Test (Optional)
 ##Don't forget to source the file from wherever you would like to from 
 
 ##Source()     ## source it from wherever you prefer/put the file
