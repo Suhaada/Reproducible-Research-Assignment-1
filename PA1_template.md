@@ -44,6 +44,8 @@ Question 1:total number of steps taken per day
     total <- aggregate(steps ~ date, dataset, sum)
     hist(total$steps, xlab= "Total steps per day", col="red", breaks = 10)
 
+![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/1.PNG)
+
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-2-1.png)
 
 mean of steps taken per day
