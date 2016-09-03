@@ -154,7 +154,7 @@ histogram
     total_new <- aggregate(steps ~ date, newdataset, sum)
     hist(total_new$steps, xlab= "Total steps per day", main="", col="blue", breaks = 10)
     
-    ![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/3.PNG)
+![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/3.PNG)
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
