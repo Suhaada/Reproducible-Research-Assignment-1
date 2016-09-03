@@ -82,6 +82,7 @@ Question 2: average of daily activity pattern
            las=2,
            par.settings=list(layout.heights=list(top.padding=3, bottom.padding=5)))
 
+![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/2.PNG)
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-5-1.png)
 
 Which 5-minute interval contains the maximum number of steps?
@@ -152,6 +153,8 @@ histogram
 
     total_new <- aggregate(steps ~ date, newdataset, sum)
     hist(total_new$steps, xlab= "Total steps per day", main="", col="blue", breaks = 10)
+    
+    ![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/3.PNG)
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-11-1.png)
 
@@ -166,5 +169,5 @@ Question 4: differences in activity patterns on weekdays and weekends
 
     library(lattice)
     xyplot( steps ~ interval | dayTypeInWeek, data = avgStepdayTypeInWeek, type="l", layout=c(1,2), xlab="Interval", ylab="Number of steps")
-
+ ![alt tag](https://github.com/Suhaada/Reproducible-Research-Assignment-1/blob/master/4.PNG)
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-12-1.png)
